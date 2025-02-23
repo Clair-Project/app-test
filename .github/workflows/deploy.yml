@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: write  # Nodig om naar gh-pages te pushen
+  contents: write
 
 jobs:
   build-deploy:
@@ -26,3 +26,4 @@ jobs:
           publish_dir: ./pages
           publish_branch: gh-pages
           force_orphan: true
+          enable_jekyll: true
